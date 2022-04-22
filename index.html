@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<!----hero Section start---->
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Port<span>folio</span></h2>
+			<ul>
+				<li><a href="#" id="one">Home</a></li>
+				<li><a href="#about" id="two">About Me</a></li>
+				<li><a href="#services" id="three">Services</a></li>
+				<li><a href="mailto:alt.z9-2onpy1gm@yopmail.com" id="five">Contact Me</a></li>
+				<li><a href="#fr-fr" onclick="rl()">🇫🇷</a></li>
+				<li><a href="#en-us" onclick="rl()">🇺🇸</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<h4 id="six">Hello, my name is</h4>
+			<h1>Liam "<span>Calumny</span>" H.</h1>
+			<h3 id="eight">I'm a 16yo Developer.</h3>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section id="about" class="about">
+		<div class="main">
+			<div class="about-text">
+				<h2 id="nine">About <span>Me</span></h2>
+				<p id="ten">I'm mainly python developer and front-end web developer. I can provide secure and clean code. I have 5 years of development experience and can code just about anything like: fully customizable discord bots, advanced python data fetching robot with or without API, clean and interactive websites with animations and many other things that would take too long to write here.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2 id="eleven">My Services</h2>
+		</div>
+
+		<div id="services" class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5 id="twelve">Web Development</h5>
+				<div class="pra">
+					<p id="thirteen">I have 3 years of experience in this domain, I can do anything that you want no matter what it is, from online stores to blogs & much more !</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5 id="fourteen">Python Development</h5>
+				<div class="pra">
+					<p id="fifteen">I have learned for 4 years a lot from this language and can code anything with it like: bots, cheats, macros etc !</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5 id="sixteen">Other Development</h5>
+				<div class="pra">
+					<p id="seventeen">I am currently learning other languages like C++/C#/Java to try: memory hacking, coding video games and much more to increase my knowledge !</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+
+	<!------footer start--------->
+	<footer>
+		<p class="end"><span id="eighteen">Copyright By Calumny</span></p>
+	</footer>
+
+	<!------Translation--------->
+	<script>
+		function rl() {
+			setTimeout(function(){
+				window.location.reload(true);
+			}, 250);
+		};
+
+		var language = {
+			fr : {
+				one: "Accueil",
+				two: "À Propos",
+				three: "Services",
+				five: "Contactez Moi",
+				six: "Bonjour, mon nom est",
+				eight: "Je suis un développeur de 16 ans.",
+				nine: "À Propos",
+				ten: "Je suis principalement développeur python et développeur web front-end. Je peux fournir un code sécurisé et propre. J'ai 5 ans d'expérience en développement et je peux coder à peu près n'importe quoi comme : des robots discord entièrement personnalisables, un robot de récupération de données python avancé avec ou sans API, des sites Web propres et interactifs avec des animations et bien d'autres choses qui prendraient trop de temps à écrire ici.",
+				eleven: "Mes Services",
+				twelve: "Développement Web",
+				thirteen: "J'ai 3 ans d'expérience dans ce domaine, je peux faire tout ce que vous voulez, des boutiques en ligne aux blogs et bien plus encore !",
+				fourteen: "Développement Python",
+				fifteen: "J'ai beaucoup appris depuis 4 ans avec ce langage et je peux tout coder avec comme: des bots, des cheats, des macros etc !",
+				sixteen: "Autre Développement",
+				seventeen: "J'apprends actuellement d'autres langages comme C++/C#/Java pour essayer : le piratage de mémoire, le développement des jeux vidéos et bien plus encore pour augmenter mes connaissances !"
+			},
+			us : {
+				one: "Home",
+				two: "About Me",
+				three: "Services",
+				five: "Contact Me",
+				six: "Hi, my name is",
+				eight: "I'm a 16yo Developer.",
+				ten: "I'm mainly python developer and front-end web developer. I can provide secure and clean code. I have 5 years of development experience and can code just about anything like: fully customizable discord bots, advanced python data fetching robot with or without API, clean and interactive websites with animations and many other things that would take too long to write here.",
+				eleven: "My Services",
+				twelve: "Web Development",
+				thirteen: "I have 3 years of experience in this domain, I can do anything that you want no matter what it is, from online stores to blogs & much more !",
+				fourteen: "Python Development",
+				fifteen: "I have learned for 4 years a lot from this language and can code anything with it like: bots, cheats, macros etc !",
+				sixteen: "Other Development",
+				seventeen: "I am currently learning other languages like C++/C#/Java to try: memory hacking, coding video games and much more to increase my knowledge !"
+			}
+		};
+
+		if (window.location.hash) {
+			if (window.location.hash === "#fr-fr") {
+				one.textContent = language.fr.one,
+				two.textContent = language.fr.two,
+				three.textContent = language.fr.three,
+				five.textContent = language.fr.five,
+				six.textContent = language.fr.six,
+				eight.textContent = language.fr.eight,
+				nine.textContent = language.fr.nine,
+				ten.textContent = language.fr.ten,
+				eleven.textContent = language.fr.eleven,
+				twelve.textContent = language.fr.twelve,
+				thirteen.textContent = language.fr.thirteen,
+				fourteen.textContent = language.fr.fourteen,
+				fifteen.textContent = language.fr.fifteen,
+				sixteen.textContent = language.fr.sixteen,
+				seventeen.textContent = language.fr.seventeen;
+			}
+			if (window.location.hash === "#en-us") {
+				one.textContent = language.us.one,
+				two.textContent = language.us.two,
+				three.textContent = language.us.three,
+				five.textContent = language.us.five,
+				six.textContent = language.us.six,
+				eight.textContent = language.us.eight,
+				ten.textContent = language.us.ten,
+				eleven.textContent = language.us.eleven,
+				twelve.textContent = language.us.twelve,
+				thirteen.textContent = language.us.thirteen,
+				fourteen.textContent = language.us.fourteen,
+				fifteen.textContent = language.us.fifteen,
+				sixteen.textContent = language.us.sixteen,
+				seventeen.textContent = language.us.seventeen;
+			}
+		};
+	</script>
+</body>
+</html>
